@@ -28,7 +28,7 @@ tools:context="com.example.android.chesscounter.MainActivity">
 
         <LinearLayout
 
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -37,113 +37,119 @@ tools:context="com.example.android.chesscounter.MainActivity">
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="@dimen/margin_top"
                 android:fontFamily="serif"
                 android:gravity="center"
-                android:text="White"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:text="@string/white"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize_header"
+                tools:ignore="UnusedAttribute" />
 
             <TextView
 
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/margin_score"
                 android:fontFamily="serif"
                 android:gravity="center"
-                android:text="0"
-                android:textColor="#FFFFFF"
-                android:textSize="56sp" />
+                android:text="@string/starting_score"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize_score"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="24dp"
-                android:background="#50FFFFFF"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button"
+                android:background="@color/color_white_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addOneForTeamA"
-                android:text="pawn +1"
-                android:textColor="#000000"
-                android:textSize="14dp" />
+                android:text="@string/text_pawn"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:background="#50FFFFFF"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button_top"
+                android:background="@color/color_white_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addThreeForTeamA"
-                android:text="knight +3"
-                android:textColor="#000000"
-                android:textSize="14sp" />
+                android:text="@string/text_knight"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:background="#50FFFFFF"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button_top"
+                android:background="@color/color_white_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addThreeForTeamA"
-                android:text="bishop +3"
-                android:textColor="#000000"
-                android:textSize="14sp" />
+                android:text="@string/text_bishop"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:background="#50FFFFFF"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button_top"
+                android:background="@color/color_white_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addFiveForTeamA"
-                android:text="rook +5"
-                android:textColor="#000000"
-                android:textSize="14sp" />
+                android:text="@string/text_rook"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:background="#50FFFFFF"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button_top"
+                android:background="@color/color_white_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addNineForTeamA"
-                android:text="queen +9"
-                android:textColor="#000000"
-                android:textSize="14sp" />
+                android:text="@string/text_queen"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
         </LinearLayout>
 
         <View
 
-            android:layout_width="1dp"
+            android:layout_width="@dimen/separator_width"
             android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="@dimen/margin_top"
             android:background="@android:color/darker_gray" />
 
         <LinearLayout
 
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -152,99 +158,106 @@ tools:context="com.example.android.chesscounter.MainActivity">
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="@dimen/margin_top"
                 android:fontFamily="serif"
                 android:gravity="center"
-                android:text="Black"
-                android:textColor="#000000"
-                android:textSize="24sp" />
+                android:text="@string/text_black"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textsize_header"
+                tools:ignore="UnusedAttribute" />
 
             <TextView
 
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/margin_score"
                 android:fontFamily="serif"
                 android:gravity="center"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                android:text="@string/starting_score"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textsize_score"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="24dp"
-                android:background="#50000000"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button"
+                android:background="@color/color_black_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addOneForTeamB"
-                android:text="pawn +1"
-                android:textColor="#FFFFFF"
-                android:textSize="14dp" />
+                android:text="@string/text_pawn"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:background="#50000000"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button_top"
+                android:background="@color/color_black_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addThreeForTeamB"
-                android:text="knight +3"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:text="@string/text_knight"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:background="#50000000"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button_top"
+                android:background="@color/color_black_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addThreeForTeamB"
-                android:text="bishop +3"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:text="@string/text_bishop"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:background="#50000000"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button_top"
+                android:background="@color/color_black_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addFiveForTeamB"
-                android:text="rook +5"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:text="@string/text_rook"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
             <Button
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:background="#50000000"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginTop="@dimen/margin_button_top"
+                android:background="@color/color_black_alpha50"
                 android:fontFamily="serif"
                 android:gravity="center"
                 android:onClick="addNineForTeamB"
-                android:text="queen +9"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp" />
+                android:text="@string/text_queen"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/textsize_button"
+                tools:ignore="UnusedAttribute" />
 
         </LinearLayout>
 
@@ -257,14 +270,15 @@ tools:context="com.example.android.chesscounter.MainActivity">
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_vertical"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="@dimen/margin_top"
         android:background="@android:color/transparent"
         android:fontFamily="serif"
         android:onClick="reset"
-        android:text="Checkmate"
+        android:text="@string/text_checkmate"
         android:textAllCaps="false"
         android:textColor="@android:color/darker_gray"
-        android:textSize="24sp"
-        android:textStyle="italic" />
+        android:textSize="@dimen/textsize_header"
+        android:textStyle="italic"
+        tools:ignore="UnusedAttribute" />
 
 </RelativeLayout>

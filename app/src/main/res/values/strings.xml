@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Chess Counter</string>
+    <string name="white">White</string>
+    <string name="starting_score">0</string>
+    <string name="text_pawn">pawn +1</string>
+    <string name="text_knight">knight +3</string>
+    <string name="text_bishop">bishop +3</string>
+    <string name="text_rook">rook +5</string>
+    <string name="text_queen">queen +9</string>
+    <string name="text_black">Black</string>
+    <string name="text_checkmate">Checkmate</string>
 </resources>
