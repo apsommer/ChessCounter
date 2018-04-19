@@ -1,267 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-
-android:layout_height="match_parent"
-tools:context="com.example.android.chesscounter.MainActivity">
-
-    <ImageView
-
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:scaleType="centerCrop"
-    android:src="@drawable/back2_mod"
-
-    />
-
-    <LinearLayout
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.android.chesscounter.MainActivity"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <ImageView
 
-            android:layout_width="@dimen/zero"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_top"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:text="@string/white"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/textsize_header"
-                tools:ignore="UnusedAttribute" />
-
-            <TextView
-
-                android:id="@+id/team_a_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_score"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:text="@string/starting_score"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/textsize_score"
-                tools:ignore="UnusedAttribute" />
-
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button"
-                android:background="@color/color_white_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addOneForTeamA"
-                android:text="@string/text_pawn"
-                android:textColor="@color/color_black"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
-
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button_top"
-                android:background="@color/color_white_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addThreeForTeamA"
-                android:text="@string/text_knight"
-                android:textColor="@color/color_black"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
-
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button_top"
-                android:background="@color/color_white_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addThreeForTeamA"
-                android:text="@string/text_bishop"
-                android:textColor="@color/color_black"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
-
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button_top"
-                android:background="@color/color_white_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addFiveForTeamA"
-                android:text="@string/text_rook"
-                android:textColor="@color/color_black"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
-
-            <Button
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button_top"
-                android:background="@color/color_white_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addNineForTeamA"
-                android:text="@string/text_queen"
-                android:textColor="@color/color_black"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
-
-        </LinearLayout>
-
-        <View
-
-            android:layout_width="@dimen/separator_width"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/margin_top"
-            android:background="@android:color/darker_gray" />
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back2_mod"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
 
-            android:layout_width="@dimen/zero"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            <TextView
+            <LinearLayout
 
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/zero"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="@string/white"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/textsize_header"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+
+                    android:id="@+id/team_a_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_score"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="@string/starting_score"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/textsize_score"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button"
+                    android:background="@color/color_white_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addOneForTeamA"
+                    android:text="@string/text_pawn"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button_top"
+                    android:background="@color/color_white_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addThreeForTeamA"
+                    android:text="@string/text_knight"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button_top"
+                    android:background="@color/color_white_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addThreeForTeamA"
+                    android:text="@string/text_bishop"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button_top"
+                    android:background="@color/color_white_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addFiveForTeamA"
+                    android:text="@string/text_rook"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button_top"
+                    android:background="@color/color_white_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addNineForTeamA"
+                    android:text="@string/text_queen"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="@dimen/separator_width"
+                android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/margin_top"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:text="@string/text_black"
-                android:textColor="@color/color_black"
-                android:textSize="@dimen/textsize_header"
-                tools:ignore="UnusedAttribute" />
+                android:background="@android:color/darker_gray" />
 
-            <TextView
+            <LinearLayout
 
-                android:id="@+id/team_b_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_score"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:text="@string/starting_score"
-                android:textColor="@color/color_black"
-                android:textSize="@dimen/textsize_score"
-                tools:ignore="UnusedAttribute" />
+                android:layout_width="@dimen/zero"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-            <Button
+                <TextView
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button"
-                android:background="@color/color_black_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addOneForTeamB"
-                android:text="@string/text_pawn"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="@string/text_black"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textsize_header"
+                    tools:ignore="UnusedAttribute" />
 
-            <Button
+                <TextView
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button_top"
-                android:background="@color/color_black_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addThreeForTeamB"
-                android:text="@string/text_knight"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
+                    android:id="@+id/team_b_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_score"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="@string/starting_score"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/textsize_score"
+                    tools:ignore="UnusedAttribute" />
 
-            <Button
+                <Button
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button_top"
-                android:background="@color/color_black_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addThreeForTeamB"
-                android:text="@string/text_bishop"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button"
+                    android:background="@color/color_black_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addOneForTeamB"
+                    android:text="@string/text_pawn"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
 
-            <Button
+                <Button
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button_top"
-                android:background="@color/color_black_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addFiveForTeamB"
-                android:text="@string/text_rook"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button_top"
+                    android:background="@color/color_black_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addThreeForTeamB"
+                    android:text="@string/text_knight"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
 
-            <Button
+                <Button
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_button"
-                android:layout_marginRight="@dimen/margin_button"
-                android:layout_marginTop="@dimen/margin_button_top"
-                android:background="@color/color_black_alpha50"
-                android:fontFamily="serif"
-                android:gravity="center"
-                android:onClick="addNineForTeamB"
-                android:text="@string/text_queen"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/textsize_button"
-                tools:ignore="UnusedAttribute" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button_top"
+                    android:background="@color/color_black_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addThreeForTeamB"
+                    android:text="@string/text_bishop"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button_top"
+                    android:background="@color/color_black_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addFiveForTeamB"
+                    android:text="@string/text_rook"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_button"
+                    android:layout_marginRight="@dimen/margin_button"
+                    android:layout_marginTop="@dimen/margin_button_top"
+                    android:background="@color/color_black_alpha50"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:onClick="addNineForTeamB"
+                    android:text="@string/text_queen"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/textsize_button"
+                    tools:ignore="UnusedAttribute" />
+
+            </LinearLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
 
     <Button
 
@@ -269,7 +267,6 @@ tools:context="com.example.android.chesscounter.MainActivity">
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_gravity="center_vertical"
         android:layout_marginBottom="@dimen/margin_top"
         android:background="@android:color/transparent"
         android:fontFamily="serif"
